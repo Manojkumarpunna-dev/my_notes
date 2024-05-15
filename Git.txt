@@ -18,7 +18,7 @@ git push -u origin main
 
 
 
-Steps I followed:
+Steps I followed for the first time:
  - Go to the folder you want to upload
  - git init
  - git add .
@@ -28,3 +28,10 @@ Steps I followed:
  - git remote add origin https://github.com/Manojkumarpunna-dev/my_notes.git
  - git push origin master  (Since no branch is present, otherwise, the branch name goes here)
 
+
+Next time onwards:
+ - Save the file first
+ - git pull origin master
+ - git add .
+ - git commit -m "message"
+ - git push origin master
