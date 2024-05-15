@@ -1,0 +1,30 @@
+>> docker ps   : lists running containers
+>> docker pull redis : pulls redis image from dockerhub
+>> docker run redis : pulls and runs redis if image not present natively, otherwise runs the existing image
+>> docker run -d redis : this runs the container in detached mode. (This means even if we close the terminal, the application still runs).
+>> docker stop <container id> : stops the container
+>> docker start <container id> : starts the container
+>> docker ps -a : lists the running and stopped containers.
+>>docker run -p<host port>:<container port> <image name>  : this will bind the container to the host port
+>> docker run -d -p6001:6379 --name redis-older redis:4.0  : this will run the redis in a detached mode and also we can give a custom name (redis-older) to the container.
+>> docker images : displays the images that are present  
+
+Commands for troubleshooting:
+>> docker logs <container id> : fetches the logs of the container
+>> docker logs <container name> : fetches the logs of the container
+>> docker exec -it <container id>  /bin/bash   : opens an interactive terminal (it) 
+
+>> docker network ls : lists the networks 
+>> docker network create <network name> : creates a custom network
+
+>>docker compose -f <file.yaml> up  : starts all the containers in the file.yaml
+>>docker compose -f <file.yaml> down : shuts down all the containers. It also removes the network.
+
+Build docker image from a docker file
+>> docker build -t <image name> <location path>
+If we are in the same directory 
+>> docker build -t <image name> .
+
+
+>> docker rmi <image id> : delete an image
+>> docker rm <containerid> : delete a container

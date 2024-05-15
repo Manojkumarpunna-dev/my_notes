@@ -1,0 +1,40 @@
+Algorithm: a set of steps or instructions a program takes for completing a task.
+	- It must have a clear problem statement.
+	- Define the input and the output needed for the algorithm.
+	- Make sure these steps are in order and are distinct (no subtasks are allowed).
+	- It should produce a result. This helps us to test the algorithm.
+	- Algorithm should complete and not take infinite amount of time to complete.
+	
+Why learn algorithms : Because there is an established body of knowledge on how to solve a particular problem. We can develop on that and build new algorithms.
+
+Efficiency of an algorithm is dependent on Time complexity and space complexity. Good algorithms run quicker with less memory utilization.
+
+How to solve problems:
+	- First establish the bounds of the problem (Ex: Does the element falls in that particular range and also the end elements are included or excluded). Basically means to identify the problem set.
+	- For any given problem there is no one best approach. Trying to come up with the better approach that solves the current problem is important.
+
+
+Search Algorithms:
+	- Linear or sequential or simple search algorithm:
+		○ Start at the beginning of the list or range of values
+		○ Compare the current value to the target
+		○ Move on sequentially till the current value becomes target value
+		○ The algorithm wouldn't return a target value instead returns the position of the target value 
+		○ Complexity : O(n)
+	- Binary search algorithm:
+		○ Even though it eliminates half the data set in every try, the elements need to be sorted for this to work unlike linear search.
+		○ The algorithm wouldn't return a target value instead returns the position of the target value 
+		○ Input: sorted list of values, Output: Target position in the list
+		○ Steps: 
+			- Determine the middle position of the sorted list
+			- Compare the element in the middle position to the target.
+			- If the element is smaller or greater then we go back to step 1 with the new list removing the elements that are not required to be searched.
+		○ Complexity: O(log n)
+
+
+Big O is the theoretical definition of the complexity of an algorithm as a function of the size
+
+O(n) -> Order of magnitude of complexity
+This measures how the algorithm performs in the worst case scenario.
+
+
