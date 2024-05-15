@@ -15,3 +15,16 @@ git push -u origin main
 git remote add origin https://github.com/Manojkumarpunna-dev/my_notes.git
 git branch -M main
 git push -u origin main
+
+
+
+Steps I followed:
+ - Go to the folder you want to upload
+ - git init
+ - git add .
+ - git config --global user.email "manojkumar.punna2708@gmail.com"
+ - git config --global user.name "Manojkumarpunna-dev"
+ - git commit -m "message"
+ - git remote add origin https://github.com/Manojkumarpunna-dev/my_notes.git
+ - git push origin master  (Since no branch is present, otherwise, the branch name goes here)
+
