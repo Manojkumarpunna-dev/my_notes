@@ -38,3 +38,7 @@ O(n) -> Order of magnitude of complexity
 This measures how the algorithm performs in the worst case scenario.
 
 
+O(1) -> constant time operation (Regardless of the size of input, the runtime remains the same)
+
+
+
