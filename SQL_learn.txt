@@ -5,3 +5,24 @@ FROM Customer
 WHERE COALESCE(referee_id, 0) != 2;
 
 COALESCE will check and replace all null values with 0 and the condition will be checked with referee_id not equal to 2.
+
+Code:
+
+select name, population, area
+from ( select name, population, area,
+    case 
+        when area >= 3000000 then true
+        when population >= 25000000 then true 
+        else false
+        end as is_bigger from world) has_big
+where is_bigger >0
+
+Using case and when instead of just a where filter ran faster.
+
+Code:
+
+SELECT tweet_id
+FROM (SELECT tweet_id, LENGTH(content) AS length_of_character FROM Tweets) AS invalid_tweet
+WHERE length_of_character > 15;
+
+LENGTH() : returns the length of the text in bytes
