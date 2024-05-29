@@ -1,0 +1,7 @@
+Code:
+
+SELECT name 
+FROM Customer
+WHERE COALESCE(referee_id, 0) != 2;
+
+COALESCE will check and replace all null values with 0 and the condition will be checked with referee_id not equal to 2.
