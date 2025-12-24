@@ -1,0 +1,14 @@
+input_file: "input.csv"
+output_file: "synthetic_output.csv"
+
+sensitive_fields:
+  email: hash
+  phone_number: hash
+  salary: numeric_noise
+
+numeric_noise:
+  method: "normal"
+  scale: 0.1
+
+categorical_strategy:
+  default: "faker"
